@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>推箱子v1.0</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.clearfix:after{
+			content:'';
+			display: block;
+			clear:both;
+		}
+		ul{
+			list-style: none;
+		}
+		img{
+			width: 50px;
+			height: 50px;
+			/*border:0;*/
+			display: block;
+		}
+		.box{
+			width: 500px;
+		}
+		.item{
+			width: 50px;
+			height: 50px;
+			/*background-color: yellow;*/
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<ul class="box clearfix">
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+		<li class="item"></li>
+	</ul>
+	<script type="text/javascript">
+		// 思路:
+		// 1.先构建好地图框架，用二维数组储存数字，来标识每个不同的数字代表了什么 
+		// 0:空白 1:墙 2:人物 3:箱子 4:箱子要推进去的点 5:推进去过后的箱子
+		// 2.创建一个图片数组，用switch来让二维数组跟li数组里面的元素一个一个的都对应
+		// 3.用keyDown方法来控制人物移动，每次不同方向的移动会触发不同的效果
+		// 写上下左右移动的函数，其实就是二维数组里面的角标互换位置。从而实现了移动的效果。
+		// 但是移动函数里，要考虑到各种情况，来进行判+断
+		// 每次移动都要加载一次地图，来更新地图。
+		var imgs=['qiang.jpg','ren.jpg','start.jpg','target.jpg','stop.jpg'];
+		var arr=[[1,1,1,1,1,1,1,1,1,1],
+				 [1,2,0,0,0,0,0,0,0,1],
+				 [1,3,4,0,0,0,0,0,0,1],
+				 [1,4,0,1,1,1,0,0,0,1],
+				 [1,0,0,1,4,0,3,0,0,1],
+				 [1,0,0,1,1,1,0,0,0,1],
+				 [1,0,3,4,0,0,0,0,0,1],
+				 [1,0,0,3,0,0,0,0,0,1],
+				 [1,0,0,0,0,0,0,0,0,1],
+				 [1,1,1,1,1,1,1,1,1,1]];
+		var lis=document.getElementsByTagName('li');
+		//人物初始位置 x是控制上下动，y控制左右动
+		var x=1,y=1;
+		map();	
+		//地图初始化
+		function map(){
+			for (var i = 0; i <arr.length; i++) {
+				for (var j = 0; j <= arr[i].length; j++){
+					switch(arr[i][j]){
+						case 0:
+							lis[i*10+j].innerHTML="";
+								break;
+						case 1:
+							lis[i*10+j].innerHTML="<img src='images/"+imgs[0]+
+							"'/>";
+								break;
+						case 2:
+							lis[i*10+j].innerHTML="<img src='images/"+imgs[1]+"'/>";
+								break;
+						case 3:
+							lis[i*10+j].innerHTML="<img src='images/"+imgs[2]+"'/>";
+								break;
+						case 4:
+							lis[i*10+j].innerHTML="<img src='images/"+imgs[3]+"'/>";
+								break;
+						case 5:
+							lis[i*10+j].innerHTML="<img src='images/"+imgs[4]+"'/>";
+								break;		
+					}
+				}
+			}
+		}
+		//上 38 
+		//下 40
+		//左 37
+		//右 39 
+		//控制人物上下左右
+		document.onkeydown=keyDown;
+		function keyDown(e){
+			var keycode=Number(e.which);
+			var realkey=String.fromCharCode(keycode);
+				switch(keycode){
+					case 38:
+						moveTop();
+						break;
+					case 40:
+						moveBottom();
+						break;
+					case 37:
+						moveLeft();
+						break;
+					case 39:
+						moveRight();
+						break;
+			}
+			map();
+		}
+		//人物向右移动判断
+		function moveRight(){
+			//用来2个位置交换
+			var tmp=0;	
+			//判断人物右边是不是墙
+			if(arr[x][y+1]==1){
+				;
+			//判断右边是不是推进去的过后的箱子
+			}else if(arr[x][y+1]==5){
+				;
+			//判断右边是不是箱子，在右边+1是不是要推进去的点	
+			}else if(arr[x][y+1]==3&&arr[x][y+2]==4){
+				arr[x][y+2]=0;
+				tmp=arr[x][y+1];
+				arr[x][y+1]=arr[x][y+2];
+				arr[x][y+2]=tmp;
+				tmp=arr[x][y];
+				arr[x][y]=arr[x][y+1];
+				arr[x][y+1]=tmp;
+				arr[x][y+2]=5;
+				//用来更新当前的位置
+				y=y+1;
+				//判断右边是不是箱子
+			}else if(arr[x][y+1]==3){
+					// 判断右边+1是不是墙或者是不是箱子
+					if(arr[x][y+2]==1  || arr[x][y+2]==3){
+							;
+				}else{
+					tmp=arr[x][y+1];
+					arr[x][y+1]=arr[x][y+2];
+					arr[x][y+2]=tmp;
+					tmp=arr[x][y];
+					arr[x][y]=arr[x][y+1];
+					arr[x][y+1]=tmp;
+					y=y+1;
+				}
+				//判断右边是不是要推进去的点
+			}else if(arr[x][y+1]==4){
+				;
+			}else{
+				tmp=arr[x][y];
+				arr[x][y]=arr[x][y+1];
+				arr[x][y+1]=tmp;
+				y=y+1;
+			}
+		}
+		//人物向左移动判断
+		function moveLeft(){
+			var tmp=0;	
+			if(arr[x][y-1]==1){
+				;
+			}else if(arr[x][y-1]==5){
+				;
+			}else if(arr[x][y-1]==3&&arr[x][y-2]==4){
+					arr[x][y-2]=0;
+					tmp=arr[x][y-1];
+					arr[x][y-1]=arr[x][y-2];
+					arr[x][y-2]=tmp;
+					tmp=arr[x][y];
+					arr[x][y]=arr[x][y-1];
+					arr[x][y-1]=tmp;
+					arr[x][y-2]=5;
+					y=y-1;
+			}else if(arr[x][y-1]==3){
+				if(arr[x][y-2]==1 || arr[x][y-2]==3){
+					;
+				}else{
+					tmp=arr[x][y-1];
+					arr[x][y-1]=arr[x][y-2];
+					arr[x][y-2]=tmp;
+					tmp=arr[x][y];
+					arr[x][y]=arr[x][y-1];
+					arr[x][y-1]=tmp;
+					y=y-1;
+				}
+			}else if(arr[x][y-1]==4){
+				;
+			}else{
+				tmp=arr[x][y];
+				arr[x][y]=arr[x][y-1];
+				arr[x][y-1]=tmp;
+				y=y-1;
+			}
+		}
+		//人物向下移动判断
+		function moveBottom(){
+			var tmp=0;	
+			if(arr[x+1][y]==1){
+				;
+			}else if(arr[x+1][y]==5){
+				;
+			}else if(arr[x+1][y]==3&&arr[x+2][y]==4){
+				arr[x+2][y]=0;
+				tmp=arr[x+1][y];
+				arr[x+1][y]=arr[x+2][y];
+				arr[x+2][y]=tmp;
+				tmp=arr[x][y];
+				arr[x][y]=arr[x+1][y];
+				arr[x+1][y]=tmp;
+				arr[x+2][y]=5;
+				x=x+1;
+			}else if(arr[x+1][y]==3){
+					if(arr[x+2][y]==1 || arr[x+2][y]==3){
+						;
+				}else{
+					tmp=arr[x+1][y];
+					arr[x+1][y]=arr[x+2][y];
+					arr[x+2][y]=tmp;
+					tmp=arr[x][y];
+					arr[x][y]=arr[x+1][y];
+					arr[x+1][y]=tmp;
+					x=x+1;
+				}
+			}else if(arr[x+1][y]==4){
+				;
+			}else{
+				tmp=arr[x][y];
+				arr[x][y]=arr[x+1][y];
+				arr[x+1][y]=tmp;
+				x=x+1;
+			}
+		}
+		//人物向上移动判断
+		function moveTop(){
+			var tmp=0;	
+			if(arr[x-1][y]==1){
+				;
+			}else if(arr[x-1][y]==5){
+				;
+			}else if(arr[x-1][y]==3&&arr[x-2][y]==4){
+				arr[x-2][y]=0;
+				tmp=arr[x-1][y];
+				arr[x-1][y]=arr[x-2][y];
+				arr[x-2][y]=tmp;
+				tmp=arr[x][y];
+				arr[x][y]=arr[x-1][y];
+				arr[x-1][y]=tmp;
+				arr[x-2][y]=5;
+				x=x-1;
+			}else if(arr[x-1][y]==3){
+					if(arr[x-2][y]==1 || arr[x-2][y]==3){
+						;
+				}else{
+					tmp=arr[x-1][y];
+					arr[x-1][y]=arr[x-2][y];
+					arr[x-2][y]=tmp;
+					tmp=arr[x][y];
+					arr[x][y]=arr[x-1][y];
+					arr[x-1][y]=tmp;
+					x=x-1;
+				}
+			}else if(arr[x-1][y]){
+				;
+			}else{
+				tmp=arr[x][y];
+				arr[x][y]=arr[x-1][y];
+				arr[x-1][y]=tmp;
+				x=x-1;
+			}
+		}
+	</script>
+</body>
+</html>
