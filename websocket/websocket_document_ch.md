@@ -163,7 +163,7 @@ maxTimeout         | Number           | Should be as low as possible to keep you
 ### 3.1 图表
 执行动作           | 具体参数                                                      | 服务端回应
 ----------------- |--------------------------------------------------------------|------------------------------------------
-扫描网关           |{"action": "REQUEST", "cmd": "discovery"}                     |{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
-添加节点           |{"action": "REQUEST", "cmd": "addnode", "data": {"nodeid":1}} |{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
-
+扫描网关           |{"action": "REQUEST", "cmd": "discovery"} |{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
+添加节点           |{"action": "REQUEST", "cmd": "addnode", "data": {"nodeid":1}}|{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
+删除节点           |{"action": "REQUEST", "cmd": "removenode", "data": {"nodeid":1}}|{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
 ### 3.2 网页中效果
