@@ -1,61 +1,61 @@
-# Ê¹ÓÃwebsocketÀ´×÷ÎªÍø¹ØÍ¨ĞÅ
+# ä½¿ç”¨websocketæ¥ä½œä¸ºç½‘å…³é€šä¿¡
 
-±êÇ© : `websocket` `ajax`  
-²ÎÕÕ :[websocketĞ­Òé](http://45.32.248.21/static/document/websocketĞ­Òé.html)  
-      [Ô­websockÎÄµµ]()
+æ ‡ç­¾ : `websocket` `ajax`  
+å‚ç…§ :[websocketåè®®](http://45.32.248.21/static/document/websocketåè®®.html)  
+     [åŸwebsockæ–‡æ¡£](http://45.32.248.21/static/document/websocket.html)
 ---
 
 ![websocketlogo](http://45.32.248.21/static/img/ws.png)
 
-### 1. ÎªÊ²Ã´ÒªÊ¹ÓÃ[websocket](http://baike.baidu.com/link?url=stMwJhjsRgfujP3CHjj2uZqXMNTpXGUb04oPsmYen9MvRkObCR-KFhawBLpY0kBO_unfmixtC2D_05iL3N6O4LDNYBmzLdngAGn-zUhkto_)?
-#### ÎÒÃÇÏÈÀ´¶Ô±ÈÏÂ [websocket](http://baike.baidu.com/link?url=stMwJhjsRgfujP3CHjj2uZqXMNTpXGUb04oPsmYen9MvRkObCR-KFhawBLpY0kBO_unfmixtC2D_05iL3N6O4LDNYBmzLdngAGn-zUhkto_)Óë [ajax](http://baike.baidu.com/item/ajax/8425)
+### 1. ä¸ºä»€ä¹ˆè¦ä½¿ç”¨[websocket](http://baike.baidu.com/link?url=stMwJhjsRgfujP3CHjj2uZqXMNTpXGUb04oPsmYen9MvRkObCR-KFhawBLpY0kBO_unfmixtC2D_05iL3N6O4LDNYBmzLdngAGn-zUhkto_)?
+#### æˆ‘ä»¬å…ˆæ¥å¯¹æ¯”ä¸‹ [websocket](http://baike.baidu.com/link?url=stMwJhjsRgfujP3CHjj2uZqXMNTpXGUb04oPsmYen9MvRkObCR-KFhawBLpY0kBO_unfmixtC2D_05iL3N6O4LDNYBmzLdngAGn-zUhkto_)ä¸ [ajax](http://baike.baidu.com/item/ajax/8425)
 ### [ajax](http://baike.baidu.com/item/ajax/8425)
-Ajax,¼´Òì²½JavaScriptºÍXML£¬ÊÇÒ»ÖÖ´´½¨½»»¥Ê½ÍøÒ³Ó¦ÓÃµÄÍøÒ³¿ª·¢¼¼Êõ¡£Í¨¹ıÔÚºóÌ¨Óë·şÎñÆ÷½øĞĞÉÙÁ¿Êı¾İ½»»»£¬Ajax¿ÉÒÔÊ¹ÍøÒ³ÊµÏÖÒì²½¸üĞÂ£¬ÕâÒâÎ¶×Å¿ÉÒÔÔÚ²»ÖØĞÂ¼ÓÔØÕû¸öÍøÒ³µÄÇé¿öÏÂ£¬¶ÔÍøÒ³µÄ²¿·Ö½øĞĞ¼ÓÔØ¸üĞÂ¡£
-Ajax ÊÇÓÅµãÔÚÓÚËüÔÚä¯ÀÀÆ÷Óëweb·şÎñÆ÷Ö®¼äÊ¹ÓÃÒì²½Êı¾İ´«Êä£¨HTTPÇëÇó£©£¬²»×èÈûÓÃ»§£¬ºËĞÄ¶ÔÏóÊÇ`XMLHTTPRequest`¡£Í¨¹ıÕâ¸ö¶ÔÏó£¬js¿ÉÔÚ²»ÖØĞÂ¼ÓÔØÒ³ÃæµÄÇé¿öÏÂÓëweb·şÎñÆ÷½»»»Êı¾İ¡£ÓÉÓÚAjaxÒÑÁ÷ĞĞÕâÃ´¶àÄê£¬ä¯ÀÀÆ÷¶ÔËüµÄ¼æÈİ·Ç³£ÍêÃÀ£¬²¢ÇÒºÜ¶à³ÉÊìµÄ¿ò¼Ü¿ÉÒÔÖ±½ÓÊ¹ÓÃ,
-ajaxÊ¹ÓÃÒÀÀµajax,portalÖĞ±ê×¼
-#### [jQuery](http://baike.baidu.com/item/jQuery)Ê¹ÓÃÊµÀı:
+Ajax,å³å¼‚æ­¥JavaScriptå’ŒXMLï¼Œæ˜¯ä¸€ç§åˆ›å»ºäº¤äº’å¼ç½‘é¡µåº”ç”¨çš„ç½‘é¡µå¼€å‘æŠ€æœ¯ã€‚é€šè¿‡åœ¨åå°ä¸æœåŠ¡å™¨è¿›è¡Œå°‘é‡æ•°æ®äº¤æ¢ï¼ŒAjaxå¯ä»¥ä½¿ç½‘é¡µå®ç°å¼‚æ­¥æ›´æ–°ï¼Œè¿™æ„å‘³ç€å¯ä»¥åœ¨ä¸é‡æ–°åŠ è½½æ•´ä¸ªç½‘é¡µçš„æƒ…å†µä¸‹ï¼Œå¯¹ç½‘é¡µçš„éƒ¨åˆ†è¿›è¡ŒåŠ è½½æ›´æ–°ã€‚
+Ajax æ˜¯ä¼˜ç‚¹åœ¨äºå®ƒåœ¨æµè§ˆå™¨ä¸webæœåŠ¡å™¨ä¹‹é—´ä½¿ç”¨å¼‚æ­¥æ•°æ®ä¼ è¾“ï¼ˆHTTPè¯·æ±‚ï¼‰ï¼Œä¸é˜»å¡ç”¨æˆ·ï¼Œæ ¸å¿ƒå¯¹è±¡æ˜¯`XMLHTTPRequest`ã€‚é€šè¿‡è¿™ä¸ªå¯¹è±¡ï¼Œjså¯åœ¨ä¸é‡æ–°åŠ è½½é¡µé¢çš„æƒ…å†µä¸‹ä¸webæœåŠ¡å™¨äº¤æ¢æ•°æ®ã€‚ç”±äºAjaxå·²æµè¡Œè¿™ä¹ˆå¤šå¹´ï¼Œæµè§ˆå™¨å¯¹å®ƒçš„å…¼å®¹éå¸¸å®Œç¾ï¼Œå¹¶ä¸”å¾ˆå¤šæˆç†Ÿçš„æ¡†æ¶å¯ä»¥ç›´æ¥ä½¿ç”¨,
+ajaxä½¿ç”¨ä¾èµ–ajax,portalä¸­æ ‡å‡†
+#### [jQuery](http://baike.baidu.com/item/jQuery)ä½¿ç”¨å®ä¾‹:
 ```javascript    
 	$.ajax({
-    type: ¡°POST¡±,
-    url: ¡°cgi/zcgi/networks//zwep_get_if_list¡±,
-    data:¡±epd=¡± + ep,
-    dataType: ¡°xml¡±,
+    type: â€œPOSTâ€,
+    url: â€œcgi/zcgi/networks//zwep_get_if_listâ€,
+    data:â€epd=â€ + ep,
+    dataType: â€œxmlâ€,
     async: false,
     success: function(xml) {
-    $(xml).find(¡®zwif¡¯).each(function(){
-    document.write(¡°zwif: (desc, id, name, ver, sec, unsec) = (¡°);
-    document.write($(this).attr(¡®desc¡¯) + ¡°, ¡°);
-    document.write($(this).attr(¡®id¡¯) + ¡°, ¡°);
-    document.write($(this).attr(¡®name¡¯) + ¡°, ¡°);
-    document.write($(this).attr(¡®ver¡¯) + ¡°, ¡°);
-    document.write($(this).attr(¡®sec¡¯) + ¡°, ¡°);
-    document.write($(this).attr(¡®unsec¡¯) + ¡°)<br>¡±);
+    $(xml).find(â€˜zwifâ€™).each(function(){
+    document.write(â€œzwif: (desc, id, name, ver, sec, unsec) = (â€œ);
+    document.write($(this).attr(â€˜descâ€™) + â€œ, â€œ);
+    document.write($(this).attr(â€˜idâ€™) + â€œ, â€œ);
+    document.write($(this).attr(â€˜nameâ€™) + â€œ, â€œ);
+    document.write($(this).attr(â€˜verâ€™) + â€œ, â€œ);
+    document.write($(this).attr(â€˜secâ€™) + â€œ, â€œ);
+    document.write($(this).attr(â€˜unsecâ€™) + â€œ)<br>â€);
     /* set mlv switch to 50% */
-    if ($(this).attr(¡®id¡¯) == ¡°38¡±)
+    if ($(this).attr(â€˜idâ€™) == â€œ38â€)
     {
-    document.write(¡°sending ...<br>¡±);
-    zwif_level_setup($(this).attr(¡®desc¡¯));
-    zwif_level_set($(this).attr(¡®desc¡¯), ¡°50¡±);
+    document.write(â€œsending ...<br>â€);
+    zwif_level_setup($(this).attr(â€˜descâ€™));
+    zwif_level_set($(this).attr(â€˜descâ€™), â€œ50â€);
     }
     });
     },
     }
 ```
- ÔÚÕâÀïÊ¹ÓÃµÄpost·½Ê½£¬ÁíÍâÒ»ÖÖ·½Ê½¾ÍÊÇget¡£ÄÇÃ´£¬Ê²Ã´Ê±ºòÓÃgetÇëÇó£¬Ê²Ã´Ê±ºòÓÃpostÇëÇóÄØ£¿ËûÃÇµÄÇø±ğÓÖÊÇÊ²Ã´ÄØ£¿
+ åœ¨è¿™é‡Œä½¿ç”¨çš„postæ–¹å¼ï¼Œå¦å¤–ä¸€ç§æ–¹å¼å°±æ˜¯getã€‚é‚£ä¹ˆï¼Œä»€ä¹ˆæ—¶å€™ç”¨getè¯·æ±‚ï¼Œä»€ä¹ˆæ—¶å€™ç”¨postè¯·æ±‚å‘¢ï¼Ÿä»–ä»¬çš„åŒºåˆ«åˆæ˜¯ä»€ä¹ˆå‘¢ï¼Ÿ
 
-   £¨1£©getÊÇ°Ñ²ÎÊıÊı¾İ¶ÓÁĞ¼Óµ½Ìá½»±íµ¥µÄACTIONÊôĞÔËùÖ¸µÄURLÖĞ£¬ÖµºÍ±íµ¥ÄÚ¸÷¸ö×Ö¶ÎÒ»Ò»¶ÔÓ¦£¬ÔÚURLÖĞ¿ÉÒÔ¿´µ½¡£PostÊÇÍ¨¹ıHTTP post»úÖÆ£¬½«±íµ¥ÄÚ¸÷¸ö×Ö¶ÎÓëÆäÄÚÈİ·ÅÖÃÔÚHTML HEADERÄÚÒ»Æğ´«ËÍµ½ACTIONÊôĞÔËùÖ¸µÄURLµØÖ·£¬ÓÃ»§¿´²»µ½Õâ¸ö¹ı³Ì¡£
+   ï¼ˆ1ï¼‰getæ˜¯æŠŠå‚æ•°æ•°æ®é˜Ÿåˆ—åŠ åˆ°æäº¤è¡¨å•çš„ACTIONå±æ€§æ‰€æŒ‡çš„URLä¸­ï¼Œå€¼å’Œè¡¨å•å†…å„ä¸ªå­—æ®µä¸€ä¸€å¯¹åº”ï¼Œåœ¨URLä¸­å¯ä»¥çœ‹åˆ°ã€‚Postæ˜¯é€šè¿‡HTTP postæœºåˆ¶ï¼Œå°†è¡¨å•å†…å„ä¸ªå­—æ®µä¸å…¶å†…å®¹æ”¾ç½®åœ¨HTML HEADERå†…ä¸€èµ·ä¼ é€åˆ°ACTIONå±æ€§æ‰€æŒ‡çš„URLåœ°å€ï¼Œç”¨æˆ·çœ‹ä¸åˆ°è¿™ä¸ªè¿‡ç¨‹ã€‚
 
-   £¨2£©¶ÔÓÚget·½Ê½£¬·şÎñÆ÷¶ËÓÃRequest.QueryString»ñÈ¡±äÁ¿µÄÖµ£¬¶ÔÓÚpost·½Ê½£¬·şÎñÆ÷¶ËÓÃRequest.Form»ñÈ¡Ìá½»µÄ±äÁ¿¡£Á½ÖÖ·½Ê½µÄ²ÎÊı¶¼¿ÉÒÔÓÃRequest»ñÈ¡¡£
+   ï¼ˆ2ï¼‰å¯¹äºgetæ–¹å¼ï¼ŒæœåŠ¡å™¨ç«¯ç”¨Request.QueryStringè·å–å˜é‡çš„å€¼ï¼Œå¯¹äºpostæ–¹å¼ï¼ŒæœåŠ¡å™¨ç«¯ç”¨Request.Formè·å–æäº¤çš„å˜é‡ã€‚ä¸¤ç§æ–¹å¼çš„å‚æ•°éƒ½å¯ä»¥ç”¨Requestè·å–ã€‚
 
-   £¨3£©get´«ËÍµÄÊı¾İÁ¿½ÏĞ¡£¬²»ÄÜ´óÓÚ2KB¡£Post´«ËÍµÄÊı¾İÁ¿½Ï´ó£¬Ò»°ã±»Ä¬ÈÏÎª²»ÊÜÏŞÖÆ¡£µ«ÀíÂÛÉÏ£¬Òò·şÎñÆ÷µÄ²»Í¬¶øÒì¡£
+   ï¼ˆ3ï¼‰getä¼ é€çš„æ•°æ®é‡è¾ƒå°ï¼Œä¸èƒ½å¤§äº2KBã€‚Postä¼ é€çš„æ•°æ®é‡è¾ƒå¤§ï¼Œä¸€èˆ¬è¢«é»˜è®¤ä¸ºä¸å—é™åˆ¶ã€‚ä½†ç†è®ºä¸Šï¼Œå› æœåŠ¡å™¨çš„ä¸åŒè€Œå¼‚ã€‚
 
-   £¨4£©get°²È«ĞÔ·Ç³£µÍ£¬post°²È«ĞÔ½Ï¸ß¡£
- ÁíÍâ£¬getÇëÇóÓĞÒÔÏÂÌØĞÔ£ºËü»á½«Êı¾İÌí¼Óµ½URLÖĞ£¬Í¨¹ıÕâÖÖ·½Ê½´«µİµ½·şÎñÆ÷£¬Í¨³£ÀûÓÃÒ»¸ö£¿´ú±íURLµØÖ·µÄ½áÎ²ÓëÊı¾İ²ÎÊıµÄ¿ª¶Ë£¬ºóÃæµÄ²ÎÊıÃ¿Ò»¸öÊı¾İ²ÎÊıÒÔ¡°Ãû³Æ=Öµ¡±µÄĞÎÊ½³öÏÖ£¬²ÎÊıÓë²ÎÊıÖ®¼äÀûÓÃÒ»¸öÁ¬½Ó·û&À´Çø·Ö¡£
+   ï¼ˆ4ï¼‰getå®‰å…¨æ€§éå¸¸ä½ï¼Œpostå®‰å…¨æ€§è¾ƒé«˜ã€‚
+ å¦å¤–ï¼Œgetè¯·æ±‚æœ‰ä»¥ä¸‹ç‰¹æ€§ï¼šå®ƒä¼šå°†æ•°æ®æ·»åŠ åˆ°URLä¸­ï¼Œé€šè¿‡è¿™ç§æ–¹å¼ä¼ é€’åˆ°æœåŠ¡å™¨ï¼Œé€šå¸¸åˆ©ç”¨ä¸€ä¸ªï¼Ÿä»£è¡¨URLåœ°å€çš„ç»“å°¾ä¸æ•°æ®å‚æ•°çš„å¼€ç«¯ï¼Œåé¢çš„å‚æ•°æ¯ä¸€ä¸ªæ•°æ®å‚æ•°ä»¥â€œåç§°=å€¼â€çš„å½¢å¼å‡ºç°ï¼Œå‚æ•°ä¸å‚æ•°ä¹‹é—´åˆ©ç”¨ä¸€ä¸ªè¿æ¥ç¬¦&æ¥åŒºåˆ†ã€‚
 
-PostÇëÇóÓĞÒÔÏÂÌØĞÔ£ºÊı¾İÊÇ·ÅÔÚHTTPÖ÷ÌåÖØµÄ£¬Æä×éÖ¯·½Ê½²»Ö¹Ò»ÖÖ£¬ÓĞ&Á¬½Ó·½Ê½£¬Ò²ÓĞ·Ö¸ô·û·½Ê½£¬¿ÉÒş²Ø²ÎÊı£¬´«µİ´óÅúÊı¾İ£¬±È½Ï·½±ã¡£
+Postè¯·æ±‚æœ‰ä»¥ä¸‹ç‰¹æ€§ï¼šæ•°æ®æ˜¯æ”¾åœ¨HTTPä¸»ä½“é‡çš„ï¼Œå…¶ç»„ç»‡æ–¹å¼ä¸æ­¢ä¸€ç§ï¼Œæœ‰&è¿æ¥æ–¹å¼ï¼Œä¹Ÿæœ‰åˆ†éš”ç¬¦æ–¹å¼ï¼Œå¯éšè—å‚æ•°ï¼Œä¼ é€’å¤§æ‰¹æ•°æ®ï¼Œæ¯”è¾ƒæ–¹ä¾¿ã€‚
 
-×ÜÖ®£¬µ±Ìá½»±íµ¥µÄÊ±ºòÍ¨³£ÓÃpostÇëÇó£¬µ±Òª´«ËÍÒ»¸ö½Ï´óµÄÊı¾İÎÄ¼şÊ±ÓÃpostÇëÇó£»µ±´«µİµÄÖµÖ»ĞèÓÃ²ÎÊı·½Ê½£¨²»´óÓÚ2KB£©Ê±£¬ÓÃget·½Ê½¼´¿É¡£
-#### [Angular.JS](http://baike.baidu.com/item/AngularJS)Ê¹ÓÃÊµÀı:
+æ€»ä¹‹ï¼Œå½“æäº¤è¡¨å•çš„æ—¶å€™é€šå¸¸ç”¨postè¯·æ±‚ï¼Œå½“è¦ä¼ é€ä¸€ä¸ªè¾ƒå¤§çš„æ•°æ®æ–‡ä»¶æ—¶ç”¨postè¯·æ±‚ï¼›å½“ä¼ é€’çš„å€¼åªéœ€ç”¨å‚æ•°æ–¹å¼ï¼ˆä¸å¤§äº2KBï¼‰æ—¶ï¼Œç”¨getæ–¹å¼å³å¯ã€‚
+#### [Angular.JS](http://baike.baidu.com/item/AngularJS)ä½¿ç”¨å®ä¾‹:
     app.controller('registerCtrl',['$scope','$http',function($scope,$http){
      $scope.asave= function(){
          
@@ -66,18 +66,18 @@ PostÇëÇóÓĞÒÔÏÂÌØĞÔ£ºÊı¾İÊÇ·ÅÔÚHTTPÖ÷ÌåÖØµÄ£¬Æä×éÖ¯·½Ê½²»Ö¹Ò»ÖÖ£¬ÓĞ&Á¬½Ó·½Ê½£¬Ò²Ó
              headers: {'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'}  
          }).success(function (data) {
            if(data.errno==0x00){
-              layer.msg('×¢²á³É¹¦', {
+              layer.msg('æ³¨å†ŒæˆåŠŸ', {
                offset: 0,
                shift: 6
     });
 ### [websocket](http://baike.baidu.com/link?url=stMwJhjsRgfujP3CHjj2uZqXMNTpXGUb04oPsmYen9MvRkObCR-KFhawBLpY0kBO_unfmixtC2D_05iL3N6O4LDNYBmzLdngAGn-zUhkto_)
- WebSocketÊÇHTML5Ò»ÖÖĞÂµÄĞ­Òé£¬ÊµÏÖÁË`ä¯ÀÀÆ÷Óë·şÎñÆ÷È«Ë«¹¤Í¨ĞÅ`¡£Æä±¾ÖÊÊÇÏÈÍ¨¹ı`HTTP/HTTPS`Ğ­Òé½øĞĞÎÕÊÖºó´´½¨Ò»¸öÓÃÓÚ½»»»Êı¾İµÄTCPÁ¬½Ó£¬·şÎñ¶ËÓë¿Í»§¶ËÍ¨¹ı´Ë`TCP`Á¬½Ó½øĞĞÊµÊ±Í¨ĞÅ¡£
-WebSocket API×î´óµÄÓÅµãÔÚÓÚ·şÎñÆ÷ºÍä¯ÀÀÆ÷¿ÉÒÔÔÚ¸ø¶¨µÄÊ±¼ä·¶Î§ÄÚµÄÈÎÒâÊ±¿Ì£¬Ïà»¥ÍÆËÍĞÅÏ¢¡£ÔÚ½¨Á¢Á¬½ÓÖ®ºó£¬·şÎñÆ÷¿ÉÒÔÖ÷¶¯´«ËÍÊı¾İ¸øä¯ÀÀÆ÷¡£´ËÍâ£¬·şÎñÆ÷Óëä¯ÀÀÆ÷Ö®¼ä½»»»µÄ±íÍ·ĞÅÏ¢ºÜĞ¡¡£WebSocket²¢²»ÏŞÓÚÒÔAjax£¨»òXHR£©·½Ê½Í¨ĞÅ£¬ÒòÎªAjax¼¼ÊõĞèÒª¿Í»§¶Ë·¢ÆğÇëÇó£¬¶øWebSocket·şÎñÆ÷ºÍ¿Í»§¶Ë¿ÉÒÔÏà»¥ÍÆËÍĞÅÏ¢¡£
-ÔÚÖ§³ÖWebSocketµÄä¯ÀÀÆ÷ÖĞ£¬ÔÚ´´½¨SocketÖ®ºó£¬¿ÉÒÔÍ¨¹ı`onopen`£¬`onmessage`£¬`onclose`£¬`onerror`ËÄ¸öÊÂ¼şÊµÏÖ¶ÔSocketµÄÏìÓ¦¡£
-### ÔÚÏîÄ¿ÖĞÊµÀıÈçÏÂ£º
+ WebSocketæ˜¯HTML5ä¸€ç§æ–°çš„åè®®ï¼Œå®ç°äº†`æµè§ˆå™¨ä¸æœåŠ¡å™¨å…¨åŒå·¥é€šä¿¡`ã€‚å…¶æœ¬è´¨æ˜¯å…ˆé€šè¿‡`HTTP/HTTPS`åè®®è¿›è¡Œæ¡æ‰‹ååˆ›å»ºä¸€ä¸ªç”¨äºäº¤æ¢æ•°æ®çš„TCPè¿æ¥ï¼ŒæœåŠ¡ç«¯ä¸å®¢æˆ·ç«¯é€šè¿‡æ­¤`TCP`è¿æ¥è¿›è¡Œå®æ—¶é€šä¿¡ã€‚
+WebSocket APIæœ€å¤§çš„ä¼˜ç‚¹åœ¨äºæœåŠ¡å™¨å’Œæµè§ˆå™¨å¯ä»¥åœ¨ç»™å®šçš„æ—¶é—´èŒƒå›´å†…çš„ä»»æ„æ—¶åˆ»ï¼Œç›¸äº’æ¨é€ä¿¡æ¯ã€‚åœ¨å»ºç«‹è¿æ¥ä¹‹åï¼ŒæœåŠ¡å™¨å¯ä»¥ä¸»åŠ¨ä¼ é€æ•°æ®ç»™æµè§ˆå™¨ã€‚æ­¤å¤–ï¼ŒæœåŠ¡å™¨ä¸æµè§ˆå™¨ä¹‹é—´äº¤æ¢çš„è¡¨å¤´ä¿¡æ¯å¾ˆå°ã€‚WebSocketå¹¶ä¸é™äºä»¥Ajaxï¼ˆæˆ–XHRï¼‰æ–¹å¼é€šä¿¡ï¼Œå› ä¸ºAjaxæŠ€æœ¯éœ€è¦å®¢æˆ·ç«¯å‘èµ·è¯·æ±‚ï¼Œè€ŒWebSocketæœåŠ¡å™¨å’Œå®¢æˆ·ç«¯å¯ä»¥ç›¸äº’æ¨é€ä¿¡æ¯ã€‚
+åœ¨æ”¯æŒWebSocketçš„æµè§ˆå™¨ä¸­ï¼Œåœ¨åˆ›å»ºSocketä¹‹åï¼Œå¯ä»¥é€šè¿‡`onopen`ï¼Œ`onmessage`ï¼Œ`onclose`ï¼Œ`onerror`å››ä¸ªäº‹ä»¶å®ç°å¯¹Socketçš„å“åº”ã€‚
+### åœ¨é¡¹ç›®ä¸­å®ä¾‹å¦‚ä¸‹ï¼š
     <script type="text/javascript">
     var sock = null;
-    var wsuri = "ws://127.0.0.1:8360/ws"; //ÇëÇóµÄws½¨Á¢µØÖ·
+    var wsuri = "ws://127.0.0.1:8360/ws"; //è¯·æ±‚çš„wså»ºç«‹åœ°å€
     $(document).ready(function(){
     $.post("/ws",{
       url:wsuri,
@@ -92,29 +92,29 @@ WebSocket API×î´óµÄÓÅµãÔÚÓÚ·şÎñÆ÷ºÍä¯ÀÀÆ÷¿ÉÒÔÔÚ¸ø¶¨µÄÊ±¼ä·¶Î§ÄÚµÄÈÎÒâÊ±¿Ì£¬Ïà»¥Í
     window.onload = function() {  
         console.log("onload");
         sock = new WebSocket(wsuri);
-        sock.onopen = function() { //websocketÊ×´Î½¨Á¢³É¹¦ºó´¥·¢µÄÊÂ¼ş
+        sock.onopen = function() { //websocketé¦–æ¬¡å»ºç«‹æˆåŠŸåè§¦å‘çš„äº‹ä»¶
             console.log("connected to " + wsuri);
         }
         sock.onclose = function(e) {
             console.log("connection closed (" + e.code + ")");
         }
-        sock.onmessage = function(e) { //¿Í»§¶Ë´Ó·şÎñ¶Ë½ÓÊÕµ½µÄÊı¾İ
+        sock.onmessage = function(e) { //å®¢æˆ·ç«¯ä»æœåŠ¡ç«¯æ¥æ”¶åˆ°çš„æ•°æ®
             console.log("message received: " + e.data);
       alert(e.data)
         }
     };
     
-    function send() {  //°ó¶¨µã»÷ÊÂ¼şºó´¥·¢µÄ»Øµ÷º¯Êı
+    function send() {  //ç»‘å®šç‚¹å‡»äº‹ä»¶åè§¦å‘çš„å›è°ƒå‡½æ•°
         var msg = document.getElementById('message').value;
-        sock.send(msg); //¿Í»§¶Ë·¢ËÍ¹ıÈ¥µÄÊı¾İ
+        sock.send(msg); //å®¢æˆ·ç«¯å‘é€è¿‡å»çš„æ•°æ®
     }
 
     </script>
- ´ËÊµÀıÖĞ£¬Ê×ÏÈÉêÇëÒ»¸öWebSocket¶ÔÏó£¬²ÎÊıÊÇĞèÒªÁ¬½ÓµÄ·şÎñÆ÷¶ËµØÖ·£¬Í¬HTTPĞ­ÒéÊ¹ÓÃHTTP://¿ªÍ·Ò»Ñù£¬WebSocketĞ­ÒéµÄURLÊ¹ÓÃWS://¿ªÍ·£¬ÁíÍâ°²È«µÄWebSocketĞ­ÒéÊ¹ÓÃWSS://¿ªÍ·¡£ÊµÀıÖĞonopenÊÂ¼ş£¬¼´µ±WebSocket´´½¨³É¹¦Ê±Ö´ĞĞdataSend£¨£©º¯Êı£¬ÆäÖĞdataSend£¨£©º¯ÊıÊÇ½«ĞÅÏ¢·¢ËÍµ½·şÎñÆ÷¶Ë¡£µ±·şÎñÆ÷ÊÕµ½¿Í»§¶ËµÄĞÅÏ¢£¬»á·¢ËÍÏàÓ¦µÄĞÅÏ¢µ½¿Í»§¶Ë¡£µ±¿Í»§¶ËÊÕµ½ĞÅÏ¢Ê±£¬»á´¥·¢onmessageÊÂ¼ş£¬Êı¾İĞÅÏ¢´æÓÚsimuRealDataÖĞ¡£µ±¿Í»§¶ËÊÕµ½·şÎñÆ÷·¢À´µÄ¹Ø±ÕÁ¬½ÓÇëÇóÊ±£¬ä¯ÀÀÆ÷»á´¥·¢oncloseÊÂ¼ş£¬µ±³öÏÖÁ¬½Ó¡¢´¦Àí¡¢½ÓÊÕ¡¢·¢ËÍÊı¾İÊ§°ÜµÄÊ±ºò¾Í»á´¥·¢onerrorÊÂ¼ş¡£ÓÉ´Ë£¬ÎÒÃÇ¿ÉÒÔ¿´³öËùÒÔµÄ²Ù×÷¶¼ÊÇ²ÉÓÃÊÂ¼şµÄ·½Ê½´¥·¢£¬Èç´Ë¾Í²»»á×èÈûUI£¬Ê¹µÃUI¸ü¿ìµÄÏìÓ¦Ê±¼ä£¬µÃµ½¸üºÃµÄÓÃ»§ÌåÑé¡£
-### **ËµÃ÷**   
->ÔÙÕßËµÀûÓÃHTTPĞ­ÒéÇëÇó¿ØÖÆÉè±¸Ê±£¬Éè±¸×´Ì¬·¢Éú¸Ä±äºó£¬ÆäËüÓÃ»§ÎŞ·¨µÃÖªÉè±¸×´Ì¬ÒÑ¾­¸Ä±ä£¬Òò´ËÎÒÃÇ¾ö¶¨ÔÚportalÖĞÊ¹ÓÃwebsocketÌæ»»²¿·Ö²ÉÓÃ»ùÓÚhttpĞ­ÒéÊµÏÖµÄweb api¼´ajax²¢ÇÒ¼¯³Éµ½ÎÒÃÇµÄsmartgatewayÏîÄ¿ÖĞÀ´
+ æ­¤å®ä¾‹ä¸­ï¼Œé¦–å…ˆç”³è¯·ä¸€ä¸ªWebSocketå¯¹è±¡ï¼Œå‚æ•°æ˜¯éœ€è¦è¿æ¥çš„æœåŠ¡å™¨ç«¯åœ°å€ï¼ŒåŒHTTPåè®®ä½¿ç”¨HTTP://å¼€å¤´ä¸€æ ·ï¼ŒWebSocketåè®®çš„URLä½¿ç”¨WS://å¼€å¤´ï¼Œå¦å¤–å®‰å…¨çš„WebSocketåè®®ä½¿ç”¨WSS://å¼€å¤´ã€‚å®ä¾‹ä¸­onopenäº‹ä»¶ï¼Œå³å½“WebSocketåˆ›å»ºæˆåŠŸæ—¶æ‰§è¡ŒdataSendï¼ˆï¼‰å‡½æ•°ï¼Œå…¶ä¸­dataSendï¼ˆï¼‰å‡½æ•°æ˜¯å°†ä¿¡æ¯å‘é€åˆ°æœåŠ¡å™¨ç«¯ã€‚å½“æœåŠ¡å™¨æ”¶åˆ°å®¢æˆ·ç«¯çš„ä¿¡æ¯ï¼Œä¼šå‘é€ç›¸åº”çš„ä¿¡æ¯åˆ°å®¢æˆ·ç«¯ã€‚å½“å®¢æˆ·ç«¯æ”¶åˆ°ä¿¡æ¯æ—¶ï¼Œä¼šè§¦å‘onmessageäº‹ä»¶ï¼Œæ•°æ®ä¿¡æ¯å­˜äºsimuRealDataä¸­ã€‚å½“å®¢æˆ·ç«¯æ”¶åˆ°æœåŠ¡å™¨å‘æ¥çš„å…³é—­è¿æ¥è¯·æ±‚æ—¶ï¼Œæµè§ˆå™¨ä¼šè§¦å‘oncloseäº‹ä»¶ï¼Œå½“å‡ºç°è¿æ¥ã€å¤„ç†ã€æ¥æ”¶ã€å‘é€æ•°æ®å¤±è´¥çš„æ—¶å€™å°±ä¼šè§¦å‘onerroräº‹ä»¶ã€‚ç”±æ­¤ï¼Œæˆ‘ä»¬å¯ä»¥çœ‹å‡ºæ‰€ä»¥çš„æ“ä½œéƒ½æ˜¯é‡‡ç”¨äº‹ä»¶çš„æ–¹å¼è§¦å‘ï¼Œå¦‚æ­¤å°±ä¸ä¼šé˜»å¡UIï¼Œä½¿å¾—UIæ›´å¿«çš„å“åº”æ—¶é—´ï¼Œå¾—åˆ°æ›´å¥½çš„ç”¨æˆ·ä½“éªŒã€‚
+### **è¯´æ˜**   
+>å†è€…è¯´åˆ©ç”¨HTTPåè®®è¯·æ±‚æ§åˆ¶è®¾å¤‡æ—¶ï¼Œè®¾å¤‡çŠ¶æ€å‘ç”Ÿæ”¹å˜åï¼Œå…¶å®ƒç”¨æˆ·æ— æ³•å¾—çŸ¥è®¾å¤‡çŠ¶æ€å·²ç»æ”¹å˜ï¼Œå› æ­¤æˆ‘ä»¬å†³å®šåœ¨portalä¸­ä½¿ç”¨websocketæ›¿æ¢éƒ¨åˆ†é‡‡ç”¨åŸºäºhttpåè®®å®ç°çš„web apiå³ajaxå¹¶ä¸”é›†æˆåˆ°æˆ‘ä»¬çš„smartgatewayé¡¹ç›®ä¸­æ¥
 
-### 2.1 websocketÔ­ÉúAPI
+### 2.1 websocketåŸç”ŸAPI
 
 ### Methods
 
@@ -142,7 +142,7 @@ initialTimeout     | Number           | The initial timeout, should be set at th
 maxTimeout         | Number           | Should be as low as possible to keep your customers happy, but high enough that the system can definitely handle requests from all clients at that sustained rate.
 
 
-### 2.2 Ä¿Ç°ÎÒÃÇBitbucketµÄ´úÂëÄ¿Â¼
+### 2.2 ç›®å‰æˆ‘ä»¬Bitbucketçš„ä»£ç ç›®å½•
 > [CloudClient](https://bitbucket.org/portus/smartgateway/src/16934f2aead5bc28ba08c4a01253abac4f7d99c2?at=master)  
 [CmdQueue](https://bitbucket.org/portus/smartgateway/src/16934f2aead5bc28ba08c4a01253abac4f7d99c2?at=master)  
 [ComandTask](https://bitbucket.org/portus/smartgateway/src/16934f2aead5bc28ba08c4a01253abac4f7d99c2?at=master)  
@@ -154,22 +154,15 @@ maxTimeout         | Number           | Should be as low as possible to keep you
 [NodeClient](https://bitbucket.org/portus/smartgateway/src/16934f2aead5bc28ba08c4a01253abac4f7d99c2?at=master)  
 [NodePro](https://bitbucket.org/portus/smartgateway/src/16934f2aead5bc28ba08c4a01253abac4f7d99c2?at=master)
 
-## 2.3 Ä¿Ç°TestServerÏÂÒÑÓĞwebsocket·şÎñ
->ĞŞ¸Ä¸ü¸Ä`WebSocket`ÊµÏÖ¿Í»§¶ËºÍ·şÎñ¶ËµÄË«Í¨ĞÅ
+## 2.3 ç›®å‰TestServerä¸‹å·²æœ‰websocketæœåŠ¡
+>ä¿®æ”¹æ›´æ”¹`WebSocket`å®ç°å®¢æˆ·ç«¯å’ŒæœåŠ¡ç«¯çš„åŒé€šä¿¡
 
-### 3.¾ßÌåÃüÁî£¨API£©
-Ä¿Ç°ÎÒÃÇÊµÏÖµÄ¾ßÌåÃüÁîÓĞÒÔÏÂ`ÆßÌõ`:  
+### 3.å…·ä½“å‘½ä»¤ï¼ˆAPIï¼‰
+ç›®å‰æˆ‘ä»¬å®ç°çš„å…·ä½“å‘½ä»¤æœ‰ä»¥ä¸‹`ä¸ƒæ¡`:  
 
-### 3.1 Í¼±í
-
-Ö´ĞĞ¶¯×÷    | ¾ßÌå²ÎÊı                                                                                                            | ·şÎñ¶Ë»ØÓ¦
-------------|------------------------------------------------------------------------------------------------------------------- ---|------------
-É¨ÃèÍø¹Ø    | {"action": "REQUEST", "cmd": "discovery"}                                                                            |  {"error":0,"action":"REPLY","data":[{"gatewayip":"192.168.10.169"}]}
-Ìí¼Ó½Úµã    | {"action": "REQUEST", "cmd": "addnode", "data": {"nodeid":1}}                                                        | 
-É¾³ı½Úµã    | {"action": "REQUEST", "cmd": "removenode", "data": {"nodeid":1}}                                                     | Register a callback to be fired on every message received from the websocket, or optionally just when the message's `data` property matches the filter provided in the options object. Each message handled will safely call `$rootScope.$digest()` unless `autoApply` is set to `false in the options. Callback gets called with a [MessageEvent](https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent?redirectlocale=en-US&redirectslug=WebSockets%2FWebSockets_reference%2FMessageEvent) object.
-»ñµÃ¿ª¹Ø    | {"action": "REQUEST", "cmd": "getnodelist", "data":{"ip":"192.168.10.169","psk":"123456789012345678901234567890AA"}} | Function to be executed each time a socket connection is opened for this instance.
-´ò¿ª¿ª¹Ø    | {"action": "REQUEST", "cmd": "binaryswitch", "data":{"nodeid":6, "op":"get", "para":""}}                             | Function to be executed each time a socket connection is closed for this instance.
-¹Ø±Õ¿ª¹Ø    | {"action": "REQUEST", "cmd": "binaryswitch", "data":{"nodeid":6, "op":"set", "para":"on"}}                           | Function to be executed each time a socket connection has an Error for this instance.
-¸´Î»ÍøÂç    | {"action": "REQUEST", "cmd": "binaryswitch", "data":{"nodeid":6, "op":"set", "para":"off"}}                          | Close the underlying socket, as long as no data is still being
-
-### 3.2 ÍøÒ³ÖĞĞ§¹û
+### 3.1 å›¾è¡¨
+æ‰§è¡ŒåŠ¨ä½œ           | å…·ä½“å‚æ•°                                    | æœåŠ¡ç«¯å›åº”
+----------------- |-------------------------------------------|------------
+æ‰«æç½‘å…³           |{"action": "REQUEST", "cmd": "discovery"}  |{"error":0,"action":"REPLY","data"ï¼š[{"gatewayip":"192.168.10.169"}]}
+   
+### 3.2 ç½‘é¡µä¸­æ•ˆæœ
