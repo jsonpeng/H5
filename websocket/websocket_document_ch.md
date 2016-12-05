@@ -167,7 +167,7 @@ maxTimeout         | Number           | Should be as low as possible to keep you
 添加节点               |{"action": "REQUEST", "cmd": "addnode", "data": {"nodeid":1}}   |{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
 删除节点               |{"action": "REQUEST", "cmd": "removenode", "data": {"nodeid":1}}|{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
 获得节点列表            |{"action": "REQUEST", "cmd": "getnodelist", "data":{"ip":"192.168.10.169","psk":"123456789012345678901234567890AA"}}                  |{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
-获得开关               |{"action": "REQUEST", "cmd": "binaryswitch", "data":{"nodeid":6, "op":"get", "para":""}}|{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
-打开开关               |{"action": "REQUEST", "cmd": "binaryswitch", "data":{"nodeid":6, "op":"set", "para":"on"}}|{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
-关闭开关               |	{"action": "REQUEST", "cmd": "binaryswitch", "data":{"nodeid":6, "op":"set", "para":"off"}}|{"error":0,"action":"REPLY","data"：[{"gatewayip":"192.168.10.169"}]}
+获得开关               |{"action": "REQUEST", "cmd": "binaryswitch", "data":{"nodeid":6, "op":"get", "para":""}}|{"error":0,"action":"REPLY","data"：{"result":"off"}}
+打开开关               |{"action": "REQUEST", "cmd": "binaryswitch", "data":{"nodeid":6, "op":"set", "para":"on"}}|{"error":0,"action":"REPLY","data"：{"result":"on"}
+关闭开关               |	{"action": "REQUEST", "cmd": "binaryswitch", "data":{"nodeid":6, "op":"set", "para":"off"}}|{"error":0,"action":"REPLY","data"：{"result":"off"}}
 ### 3.2 网页中效果
