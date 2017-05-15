@@ -1,0 +1,62 @@
+<div ui-content-for="title">
+  <span>LoginPage</span>
+</div>
+
+<div class="scrollable">
+ <div class="scrollable-content section">
+   
+  <form role="form" name="registerForm" action="" method="post" ng-controller="login"  >
+    <fieldset>
+      <legend>Login</legend>
+        <div class="form-group has-primary has-feedback">
+          <label><i class="fa fa-user"></i>Username</label>
+          <input type="text"
+              class="form-control"
+                 placeholder="Enter Username"
+                 name="username" ng-minlength="5" ng-maxlength="16" ng-model="formData.username" required>
+        </div>
+<p>
+ <span  ng-show="registerForm.username.$invalid">
+             <span style="color: red" ng-show="registerForm.username.$error.minlength">
+     *username less than 5</span>
+     
+     <span style="color: red" ng-show="registerForm.username.$error.maxlength">
+*username more than 16</span>
+  </span>
+</p>
+         
+
+
+        <div class="form-group has-primary has-feedback">
+          <label><i class="fa fa-key"></i>Password</label>
+          <input type="password" 
+                 class="form-control"
+                 placeholder="Enter Password" name="password" ng-minlength="6" ng-maxlength="16" ng-model="formData.password" required>
+        </div>
+<p>
+ <span  ng-show="registerForm.password.$invalid">
+               <span  style="color: red" ng-show="registerForm.password.$error.minlength" >
+     *password less than 6</span>
+    
+     <span style="color: red" ng-show="registerForm.password.$error.maxlength">
+*password more than 16</span>
+</span>
+</p>
+
+
+
+        <div class="form-group has-primary has-feedback">
+          <label>Remember Me</label>
+          <ui-switch 
+            ng-model='rememberMe'></ui-switch>
+        </div>
+    </fieldset>
+    <hr>
+
+
+      <input type="button" class="btn btn-default btn-block" value="Login" ng-disabled="registerForm.username.$invalid||registerForm.password.$invalid " ng-click="login()" />
+    <hr>
+ 
+  </form>
+ </div>
+</div>

@@ -1,0 +1,59 @@
+<div ui-content-for="title">
+  <span>RegPage</span>
+</div>
+
+<div class="scrollable">
+  <span class="pull-left" onclick="back()"><span style="text-decoration:underline"><i class="fa fa-arrow-left"></i></span></span>
+ <div class="scrollable-content section">
+  
+
+
+  <form   name="registerForm" actin="/" method="post" novalidate ng-controller="register">
+
+    <fieldset>
+      <legend>Reg</legend>
+
+
+        <div class="form-group has-success has-feedback">
+          <label><i class="fa fa-key"></i>Password</label>
+          <input type="password" 
+                 class="form-control"
+                 placeholder="Password" name="pass" ng-model="formData.pass" ng-minlength="6"
+                    ng-maxlength="16" required>
+        </div>
+
+
+
+        <p>
+                    <span style="color: red" ng-show="registerForm.pass.$invalid">
+                        <span ng-show="registerForm.pass.$error.minlength">*password don't hava 6</span>
+                        <span ng-show="registerForm.pass.$error.maxlength">*password don't hava 16</span>
+                    </span>
+        </p>
+
+            <div class="form-group has-success has-feedback">
+          <label><i class="fa fa-check-square"></i>Enter Password</label>
+          <input type="password" 
+                 class="form-control"
+                 placeholder="Enter Password" name="confirm_pass" ng-model="formData.confirm_pass" required>
+        </div>
+
+  <p>
+                    <span style="color: red" ng-show="registerForm.pass.$valid">
+                        <span ng-show="formData.confirm_pass!=formData.pass">*pass don't = password</span>
+                    </span>
+                </p>
+     
+    </fieldset>
+    <hr>
+   
+
+    <input tpye="button" class="btn btn-default btn-block" ng-disabled="registerForm.pass.$invalid || formData.pass != formData.confirm_pass" value="Reg" ng-click="reg();dbreg();" />
+ 
+
+
+ 
+
+  </form>
+ </div>
+</div>

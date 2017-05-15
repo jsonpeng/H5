@@ -1,0 +1,64 @@
+<div ui-content-for="title">
+  <span>PortuSystem</span>
+</div>
+
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class='section'>
+      <ui-state id='activeTab' default='1'></ui-state>
+
+      <ul class="nav nav-tabs">
+        <li ui-class="{'active': activeTab == 1}">
+          <a ui-set="{'activeTab': 1}">All Gateway</a>
+        </li>
+       <!--  <li ui-class="{'active': activeTab == 2}">
+          <a ui-set="{'activeTab': 2}">Category</a>
+        </li>
+        <li ui-class="{'active': activeTab == 3}">
+          <a ui-set="{'activeTab': 3}">Setting</a>
+        </li> -->
+      </ul>
+
+      <div ui-if="activeTab == 1">
+       
+      <div id="gateway" >
+
+      </div>
+      
+
+      </div>
+
+      <!-- <div ui-if="activeTab == 2">
+        <h3 class="page-header">Tab 2</h3>
+        <p>[[lorem]]</p>
+         <p>[[lorem]]</p>
+        
+      </div>
+
+      <div ui-if="activeTab == 3">
+        <h3 class="page-header">Tab 3</h3>
+        <p>[[lorem]]</p>
+         <p>[[lorem]]</p>
+       
+      </div> -->
+
+   <!-- <div class="btn-group justified nav-tabs">
+        <a ui-set="{'activeTab': 1}" 
+            ui-class="{'active': activeTab == 1}" class="btn btn-default"><i class="fa fa-home"></i>All</a>
+
+        <a ui-set="{'activeTab': 2}" 
+            ui-class="{'active': activeTab == 2}" class="btn btn-default"><i class="fa fa-tablet"></i>Category</a>
+
+        <a ui-set="{'activeTab': 3}" 
+            ui-class="{'active': activeTab == 3}" class="btn btn-default"><i class="fa fa-cog"></i>Settings</a>
+      </div>
+ -->
+
+
+  </div>
+</div>
+
+
+
+
